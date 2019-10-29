@@ -1,0 +1,37 @@
+
+    /* Este es el archivo de estilo de la pagina */
+    @font-face {
+                 font-family: truthwillout;
+                 src: url(../fuentes/truthwillout.ttf); /* file in my fuentes folder */
+                }
+     body {background:black;
+           }
+     #wrapper {background-image: url("../imagenes/Halloween Wallpaper 5.jpg");
+               width:1200px;
+               height:720px;
+               margin:10px auto;/* centra el wrapper */
+               font-family: 'Creepster', cursive;
+               position:relative;
+               }
+      #titulo {font-size:3.5em;
+               font-family:truthwillout; /* the font I've add via @font-face */
+               color:gray;
+               position:absolute;
+               top:10px;
+               left:30px;}
+      #p1 {position:absolute;
+           font-size:1.5em;
+           top:300px;
+           left:550px;}
+      #scarecrow {position: absolute;
+              top:400px;
+              left:650px;
+              width:100px;
+              height:160px;
+              cursor:pointer;
+              /*border: 1px solid white;*/}
+      #zombie {position:absolute;
+               top:500px;
+               left:500px;
+               visibility:hidden;    /* hidden at the begin */
+               cursor:crosshair;}
