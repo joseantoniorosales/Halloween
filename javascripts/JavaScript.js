@@ -17,3 +17,43 @@
  function parar(element){
    document.getElementById(element).pause();
  }
+
+ function mostrarDialogo(){
+   if( document.getElementById("Dialogue1").style.visibility == "visible"){
+    
+    document.getElementById("Dialogue1").style.visibility = "hidden";
+    borrar("Dialogue1");
+    sonar("KiraLaughR");
+    
+    
+    setTimeout(function(){
+      sonar("Scream");
+      show("Jumpscare");
+      setTimeout (function() {
+        document.getElementById("Dialogue2").style.visibility = "visible";
+        hide("Jumpscare");
+    
+        }, 6000 );
+      
+    }, 5400);
+    
+    
+    
+   }else if(document.getElementById("Dialogue2").style.visibility == "visible"){
+    document.getElementById("Dialogue2").style.visibility = "hidden";
+    document.getElementById("Dialogue3").style.visibility = "visible";
+
+   }
+ }
+
+ function borrar(element){
+document.getElementById(element).remove();
+
+
+ }
+
+ function retraso(element){
+
+document.getElementById(element).delay();
+
+ }

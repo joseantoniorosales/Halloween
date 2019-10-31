@@ -4,26 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scary Halloween Party</title>
+    <title>Halloween 2 SPOOKY FOR UR BONES party</title>
     <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet"> 
-    <!-- esta presentación NO ES RESPONSIVE es para ordenador -->
     <link href="estilos/StyleSheet.css" rel="StyleSheet">
-    <script src="javascripts/JavaScript.js" rel="StyleSheet">
+    <link href="imagenes/favicon.ico" rel="icon">
+    <script src="javascripts/JavaScript.js">
+    
 
     </script>
 </head>
-<body onload="sonar('lullaby')">
-    <audio id="killyou" loop>
-        <source src="sonidos/killyou.mp3" type="audio/mpeg">
+<body onload="sonar('HowlingWind')">
+    <audio id="HowlingWind" loop>
+        <source src="sonidos/HowlingWind.mp3" type="audio/mpeg">
+
     </audio>
-    <audio>
-        <source src="sonidos/lullaby.mp3" type="audio/mpeg">
+    <audio id="ButNobodyCame" loop>
+        <source src="sonidos/ButNobodyCame.mp3">
     </audio>
+    <audio id="Premonition" loop>
+        <source src="sonidos/Premonition.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="SansTalk">
+        <source src="sonidos/SansTalk.mp3">
+    </audio>
+
+    <audio id="KiraLaughR">
+        <source src="sonidos/KiraLaughR.mp3">
+    </audio>
+    <audio id="Scream">
+        <source src="sonidos/Scream.mp3">
+    </audio>
+    
     <div id="wrapper">
-      <h1 id="titulo">You wanna Have a Bad Time?</h1>
-      <p id="p1">Then click the spooky scarecrow</p>
-      <div id="scarecrow" onclick="show('zombie');sonar('killyou')"></div><!-- this is the clickable area for the witch (see on style)-->
-      <img id="zombie" onclick="hide('zombie');parar('killyou')" src="imagenes/zombie.gif" height="200">
+      
+        <h1 id="titulo">YOU WANNA HAVE A BAD TIME?</h1>
+      
+      <p id="p1">Then click the spooky scarecrow below this text</p>
+      
+      <div id="scarecrow" onclick="show('Sans');sonar('Premonition'); sonar('SansTalk'); parar('HowlingWind');hide('p1');hide('titulo');show('Dialogue1'); "></div>
+      
+      <div id="Dialogue1"> Hey there! You where expecting something scary? Whelp, instead... It was me, Sans!, okay, enough joking, Wanna see something great: Then click again on me, kiddo!</div>
+      
+      <div id="Dialogue2">Okay, okay, that was weird, but I assure you there's not gonna happen again. Now, here's what you were expecting all this time... The invitation to the spookiest halloween party ever! Come with me and we will have a truly (Good) BAD TIME!</div>
+     
+      <img id="Sans" onclick="sonar('ButNobodyCame'); parar('Premonition'); sonar('KiraLaughR');mostrarDialogo();" src="imagenes/Sans Sprite.gif" height="200">
+      
+      
+      <img id="Jumpscare"  src="imagenes/LainMeister.gif">
+      
+      
     </div>
 </body>
 </html>
